@@ -66,7 +66,7 @@ export const Column: React.FC<ColumnProps> = ({
 				))}
 			</ScrollArea>
 			<div className="p-4 bg-gray-200 flex justify-center">
-				<Button onClick={() => navigate('/create')} variant="outline" className="w-full cursor-pointer hover:bg-gray-300">
+				<Button type="button" onClick={() => navigate('/create')} variant="outline" className="w-full cursor-pointer hover:bg-gray-300">
 					Create new task
 				</Button>
 			</div>

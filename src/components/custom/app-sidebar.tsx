@@ -6,27 +6,30 @@ import {
 	SidebarHeader,
 } from "@/components/ui/sidebar";
 
+import { Link } from "react-router-dom";
+
 export function AppSidebar() {
 	return (
 		<Sidebar>
 			<SidebarHeader>
-				<div>App Name</div>
+			<div>Trello</div>
 			</SidebarHeader>
 			<SidebarContent>
 				<SidebarGroup>
-					<a href="">home</a>
-					<a href="">home</a>
-					<a href="">home</a>
-					<a href="">home</a>
+				<Link to="">Home</Link>
+					<Link to="">Todo List</Link>
+					<Link to="">Column</Link>
+					<Link to="">Done</Link>
+					<Link to="">Todo</Link>
+					<Link to="">In Progress</Link>
 				</SidebarGroup>
 				<SidebarGroup>
-					<a href="">home</a>
-					<a href="">home</a>
-					<a href="">about us</a>
-					<a href="">home</a>
+				<Link to="/create">Add Task</Link>
+				<Link to="">About Us</Link>
 				</SidebarGroup>
 			</SidebarContent>
 			<SidebarFooter>footer</SidebarFooter>
 		</Sidebar>
 	);
 }
+
