@@ -36,8 +36,7 @@ export const TaskCard: React.FC<TaskCardProps> = ({ id, title }) => {
 			className={cn(
 				"bg-white shadow-sm flex items-center p-3 gap-3",
 				className
-			)}
-		>
+			)}>
 			<GripVertical className="text-gray-400" size={16} />
 			<CardContent className="p-0 flex-1">{title}</CardContent>
 		</Card>

@@ -52,7 +52,7 @@ export const Column: React.FC<ColumnProps> = ({
 			onDragOver={(e) => e.preventDefault()}
 			// onDragEnter={}
 			// onDragLeave={}
-			onDrop={handleMoveTask}
+			onDrop={handleMoveTask}       
 			className="w-[350px] flex flex-col bg-gray-100 shadow-md rounded-2xl overflow-hidden"
 		>
 			<div className="p-4 bg-gray-200 flex justify-between items-center">
