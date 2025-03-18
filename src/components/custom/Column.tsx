@@ -5,6 +5,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { TaskCard } from "./Task";
 import { TaskType } from "@/types";
 import { ReloadCTX } from "@/contexts/reload";
+import { useNavigate } from "react-router-dom";
 
 interface ColumnProps {
 	id: string | number;
@@ -20,6 +21,7 @@ export const Column: React.FC<ColumnProps> = ({
 	// setReload,
 	// reload,
 }) => {
+	const navigate = useNavigate();
 	const [tasks, setTasks] = useState<TaskType[]>([]);
 
 	const [reload, setReload] = useContext(ReloadCTX);
@@ -64,7 +66,7 @@ export const Column: React.FC<ColumnProps> = ({
 				))}
 			</ScrollArea>
 			<div className="p-4 bg-gray-200 flex justify-center">
-				<Button variant="outline" className="w-full">
+				<Button onClick={() => navigate('/create')} variant="outline" className="w-full cursor-pointer hover:bg-gray-300">
 					Create new task
 				</Button>
 			</div>
