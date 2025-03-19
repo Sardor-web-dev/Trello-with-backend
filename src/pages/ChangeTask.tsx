@@ -81,7 +81,7 @@ const ChangeForm = () => {
                 </Button>
             </form>
 
-            <Button type="button" onClick={() => navigate(`/todo/${id}`)} className="bg-red-500 text-white w-50 h-10 rounded-lg cursor-pointer hover:bg-red-700">
+            <Button type="button" onClick={() => navigate(`/`)} className="bg-red-500 text-white w-50 h-10 rounded-lg cursor-pointer hover:bg-red-700">
                 Cancel
             </Button>
         </div>
