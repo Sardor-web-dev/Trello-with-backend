@@ -10,3 +10,10 @@ export type TaskType = {
 	column: string | number;
 	created_at: string;
 };
+
+
+export type  Inputs = {
+	title: string;
+	description: string;
+	column: string;
+}

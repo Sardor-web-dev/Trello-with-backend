@@ -15,15 +15,9 @@
       "created_at": "2022-02-01T00:00:00.000Z"
     },
     {
-      "id": "2491",
-      "title": "Learn Next Js",
-      "description": "learn next js in 2 weeks",
-      "column": "4"
-    },
-    {
-      "id": "3ae9",
-      "title": "Learn Redux",
-      "description": "Learn Redux toolkit for better coding",
+      "id": "e1ae",
+      "title": "learn Next",
+      "description": "learn Next for better coding",
       "column": "2"
     }
   ],
