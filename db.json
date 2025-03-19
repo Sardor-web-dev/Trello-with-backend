@@ -1,5 +1,12 @@
 {
-  "todos": [],
+  "todos": [
+    {
+      "title": "Learn JS",
+      "description": "Learn Redux toolkit for better coding",
+      "column": "1",
+      "id": "61e6"
+    }
+  ],
   "columns": [
     {
       "id": "1",

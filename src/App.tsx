@@ -4,6 +4,7 @@ import Layout from "./layouts/Layout";
 import Home from "./pages/Home";
 import FormTask from "./pages/CreateTask";
 import TaskPage from "./pages/TaskPage";
+import ChangeForm from "./pages/ChangeTask";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 					<Route index element={<Home />} />
 					<Route path="/create" element={<FormTask />} />
 					<Route path="/task/:id" element={<TaskPage />} />
+					<Route path="/edit/:id" element ={<ChangeForm/>}/>
 				</Route>
 			</Routes>
 		</>
