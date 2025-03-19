@@ -17,3 +17,9 @@ export type  Inputs = {
 	description: string;
 	column: string;
 }
+export interface Todo {
+	id: string;
+	title: string;
+	description: string;
+	column: string;
+}

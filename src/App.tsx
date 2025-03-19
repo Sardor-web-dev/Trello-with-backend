@@ -12,7 +12,7 @@ function App() {
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Home />} />
 					<Route path="/create" element={<FormTask />} />
-					<Route path="/:id" element={<TaskPage />} />
+					<Route path="/task/:id" element={<TaskPage />} />
 				</Route>
 			</Routes>
 		</>
