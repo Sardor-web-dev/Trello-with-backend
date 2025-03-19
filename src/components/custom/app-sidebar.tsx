@@ -16,7 +16,7 @@ export function AppSidebar() {
 			</SidebarHeader>
 			<SidebarContent>
 				<SidebarGroup>
-				<Link to="">Home</Link>
+				<Link to="/">Home</Link>
 					<Link to="">Todo List</Link>
 					<Link to="">Column</Link>
 					<Link to="">Done</Link>

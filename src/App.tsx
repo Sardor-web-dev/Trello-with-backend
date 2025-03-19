@@ -3,6 +3,7 @@ import "./App.css";
 import Layout from "./layouts/Layout";
 import Home from "./pages/Home";
 import FormTask from "./pages/CreateTask";
+import TaskPage from "./pages/TaskPage";
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Home />} />
 					<Route path="/create" element={<FormTask />} />
+					<Route path="/:id" element={<TaskPage />} />
 				</Route>
 			</Routes>
 		</>

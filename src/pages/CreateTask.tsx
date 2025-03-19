@@ -36,9 +36,9 @@ const FormTask = () => {
         <div className="flex flex-col bg-gray-400 p-4 rounded-lg items-center gap-2 justify-center"> 
             <form onSubmit={handleSubmit} className="flex flex-col gap-2 items-center justify-center">
             <h1 className="text-3xl font-bold">Create new Task</h1>
-                <Input onChange={handleChange} value={formData.title} name="title" className="bg-white border-1 w-70 h-8 rounded-md p-2" type="text" />
-                <Input onChange={handleChange} value={formData.description} name="description" className="bg-white border-1 w-70 h-8 rounded-md p-2" type="text" />
-                <Input onChange={handleChange} value={formData.column} name="column" className="bg-white border-1 w-70 h-8 rounded-md p-2" type="text" />
+                <Input onChange={handleChange} value={formData.title} name="title" className="bg-white border-1 w-70 h-8 rounded-md p-2" type="text" placeholder="Enter title" />
+                <Input onChange={handleChange} value={formData.description} name="description" className="bg-white border-1 w-70 h-8 rounded-md p-2" type="text" placeholder="Enter description" />
+                <Input onChange={handleChange} value={formData.column} name="column" className="bg-white border-1 w-70 h-8 rounded-md p-2" type="text" placeholder="Enter column" />
             <Button className="bg-blue-500 text-white w-50 h-10 rounded-lg cursor-pointer hover:bg-blue-700">Create new Task</Button>
             </form>
         <Button type="button" onClick={() => navigate('/')} className="bg-red-500 text-white w-50 h-10 rounded-lg cursor-pointer hover:bg-red-700">Exit</Button>
